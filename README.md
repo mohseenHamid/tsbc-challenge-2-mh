@@ -2,42 +2,45 @@
 
 ## Description
 
-The task was to refactor code to make the webpage more accessible. This was done by incorporating alt image attributes, semantic HTML tags, and refining the overall codebase (HTML + CSS) to make it more strucutred and coherent.
+The task was to create a professional portfolio webpage that displays my projects to date. In doing so, I'd be using the new HTML & CSS web dev skills I've learnt to date namely, flexbox, media queries, and CSS variables.
 
 ## User Story
 
 ```
-AS A marketing agency
-I WANT a codebase that follows accessibility standards
-SO THAT our own site is optimized for search engines
+AS A job applicant
+I WANT a webpage that displays my professional biography
+SO THAT a hiring manager has a single source of truth to get to know me and see my work
 ```
 
 ## Acceptance Criteria
 
-The website must fulfil the following criteria to meet accessibility standards:
+Here are the critical requirements necessary to develop a portfolio that satisfies a typical hiring manager’s needs:
 
-- Semantic HTML elements utilised throughout the source code
-- HTML elements follow a logical structure independent of styling and positioning
-- Image and icon elements contain accessible `alt` attributes
-- Heading attributes fall in sequential order
-- Title elements contain a concise, descriptive title
+- When the page is loaded the page presents your name, a recent photo or avatar, and links to sections about you, your work, and how to contact you
+- When one of the links in the navigation is clicked then the UI scrolls to the corresponding section
+- When viewing the section about your work then the section contains titled images of your applications
+- When presented with the your first application then that application's image should be larger in size than the others
+- When images of the applications are clicked then the user is taken to that deployed application
+- When the page is resized or viewed on various screens and devices then the layout is responsive and adapts to my viewport
 
 ## Usage
 
-This is a static webpage that contains a navigation bar in the header. Click on the links to navigate to the respective content sections on the page.
+This is a static webpage that contains a navigation bar in the header. Click the links to go to the content sections of the page. In the "My Work" section, click on the tiles to be taken to the respective project's GitHub repo.
 
-## Mock-Up
+## Mock-Up (EDIT)
 
-The Horiseon webpage includes:
+This portfolio webpage includes:
 
 - a header containing a page title + navigation bar
 - a cover image
-- a main body containing cards with text and images
-- a footer containing copyright info
+- a main body containing 2 sections
+  1. About Me: a brief professional biography
+  2. My Work: a tiled layout of my projects (that can be clicked)
+- a footer containing contact info
 
 Please see below a screenshot of the webpage:
 
-![image](https://user-images.githubusercontent.com/116577227/206913582-46e32736-f4be-4b39-a543-f3b38f9197a6.png)
+![portfolio demo](./images/01-css-challenge-demo.gif)
 
 The following link takes you to the GitHub Pages deployment of the website:
 
