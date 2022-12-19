@@ -1,0 +1,227 @@
+/* 
+Questions
+1. Difference between body and * (why doesn't body style impact the grid boxes)
+2. Why does hero-banner + image not show?
+3. How to style the profile-pic to make it responsive to zoom
+4. How to size the project tiles, especially large tile so that they respond to scrolling
+6. How to fill the page height
+7. Width of large tile longer than small tiles
+8. Why is the width of aside-container and hf-container different even though both are set to 15%?
+*/
+
+/* page styles */
+:root {
+	--dark: #09062e;
+	--light: wheat;
+	--curve: 0.5rem;
+	--thick: 0.3rem;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	/* box-sizing: border-box; => padding + border included in width & height */
+	box-sizing: border-box;
+	font-family: "Homenaje";
+}
+
+body {
+	background: var(--light);
+	color: var(--light);
+}
+
+html {
+	/* set 1rem to 10px instead of native 16px to make it easier to calculate font-size values for the rest of the page (e.g. 1.6rem is 16px, 2.0rem is 20px, etc.) */
+	font-size: 62.5%;
+}
+
+header,
+footer {
+	width: 100%;
+	background: var(--dark);
+	/* height: 20vh; */
+}
+
+/* general styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+}
+
+p {
+	margin: 0;
+}
+
+h1 {
+	font-size: 5rem;
+}
+
+h2 {
+	font-size: 4rem;
+}
+
+h3 {
+	font-size: 3rem;
+}
+
+h4 {
+	font-size: 2rem;
+}
+
+p {
+	color: var(--dark);
+	font-size: 2rem;
+}
+
+.page-section,
+header,
+footer {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.page-section {
+	margin: 2rem 4rem 2rem 0;
+	display: flex;
+	justify-content: flex-start;
+	align-items: stretch;
+}
+
+/* header/footer styles */
+.hf-title-container {
+	width: 15%;
+	text-align: right;
+}
+
+#at {
+	opacity: 0.7;
+}
+
+nav {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin: 0 4rem;
+	padding: 1.5rem 0;
+	gap: 2rem;
+}
+.nav-item {
+	text-decoration: none;
+	color: var(--light);
+	padding: 1rem;
+	border-radius: var(--curve) 0 0 var(--curve);
+	border-right: var(--thick) solid var(--light);
+}
+.nav-item:hover {
+	background: linear-gradient(to left, wheat 50%, var(--dark) 50%) right;
+	background-size: 200% 100%;
+	color: var(--dark);
+	border-right: var(--thick) solid var(--dark);
+	transition: all 0.5s;
+}
+
+#hero-banner {
+	min-height: 15vh;
+	background-image: url("./images/bg.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+/* main styles */
+.aside-container {
+	width: 15%;
+	border-right: var(--thick) solid var(--dark);
+	padding: 0 1.5rem 0 0;
+}
+
+.aside-title {
+	color: var(--dark);
+	text-align: right;
+}
+
+#about-me-para {
+	width: 70%;
+	padding: 0 1.5rem 0 1.5rem;
+	text-align: justify;
+}
+
+#about-me-para p {
+	font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+#profile-pic {
+	display: flex;
+	justify-content: flex-end;
+	min-width: 15%;
+	background-image: url("./images/profile-pic.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: var(--curve);
+}
+
+#project-grid {
+	width: 85%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding: 0 0 0 1.5rem;
+}
+
+.tile-wrap {
+	border: var(--thick) solid var(--dark);
+	border-radius: var(--curve);
+	margin: var(--thick);
+}
+
+.project-tile {
+	background: grey;
+	color: var(--light);
+	opacity: 0.5;
+	display: flex;
+	align-items: flex-end;
+	padding: 0 0 1rem 0;
+	text-decoration: none;
+	transition: all 0.5s;
+	height: 100%;
+}
+.project-tile:hover {
+	background-image: url("images/bg.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	transition: all 0.5s;
+	opacity: 1;
+}
+.project-tile div {
+	background: var(--dark);
+	padding: 8px 10px;
+	z-index: 2;
+	border-radius: 0 var(--curve) var(--curve) 0;
+}
+.project-tile div p {
+	color: var(--light);
+	font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+#large-tile {
+	flex-basis: 100%;
+	height: 30vh;
+}
+#ptl:hover {
+	background-image: url("https://www.hdwallpapers.in/download/purple_planet_and_purple_space_hd_purple-1920x1080.jpg");
+}
+
+.small-tile {
+	flex-basis: calc(50% - 1em);
+	height: 20vh;
+}

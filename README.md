@@ -38,6 +38,10 @@ This portfolio webpage includes:
   2. My Work: a tiled layout of my projects (that can be clicked)
 - a footer containing contact info
 
+Please see below a figma wireframe of the webpage:
+
+- https://www.figma.com/file/FpdVq5dlxMxByHo35mkCRz/tsbc-challenge-2-mh?node-id=0%3A1&t=P4SSiwnPnoA10f2h-1
+
 Please see below a screenshot of the webpage:
 
 ![portfolio demo](./images/01-css-challenge-demo.gif)
