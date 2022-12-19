@@ -27,28 +27,31 @@ Here are the critical requirements necessary to develop a portfolio that satisfi
 
 This is a static webpage that contains a navigation bar in the header. Click the links to go to the content sections of the page. In the "My Work" section, click on the tiles to be taken to the respective project's GitHub repo.
 
-## Mock-Up (EDIT)
+## Mock-Up
 
 This portfolio webpage includes:
 
 - a header containing a page title + navigation bar
-- a cover image
+- a hero banner
 - a main body containing 2 sections
   1. About Me: a brief professional biography
   2. My Work: a tiled layout of my projects (that can be clicked)
 - a footer containing contact info
 
-Please see below a figma wireframe of the webpage:
+Please see below a screenshot of the figma wireframe:
+![figma wireframe](./images/wireframe.png)
+
+Please see below a link to the figma wireframe of the webpage:
 
 - https://www.figma.com/file/FpdVq5dlxMxByHo35mkCRz/tsbc-challenge-2-mh?node-id=0%3A1&t=P4SSiwnPnoA10f2h-1
 
 Please see below a screenshot of the webpage:
 
-![portfolio demo](./images/01-css-challenge-demo.gif)
+![portfolio webpage screenshot](./images/portfolio-screenshot.png)
 
 The following link takes you to the GitHub Pages deployment of the website:
 
-- https://mohseenhamid.github.io/tsbc-challenge-1-mh/
+- https://mohseenhamid.github.io/tsbc-challenge-2-mh/
 
 ## Credits
 

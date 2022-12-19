@@ -7,6 +7,7 @@ Questions
 6. How to fill the page height
 7. Width of large tile longer than small tiles
 8. Why is the width of aside-container and hf-container different even though both are set to 15%?
+9. How to stop tile bg leaking under small screen mode
 */
 
 /* page styles */
@@ -39,7 +40,6 @@ header,
 footer {
 	width: 100%;
 	background: var(--dark);
-	/* height: 20vh; */
 }
 
 /* general styles */
@@ -224,4 +224,65 @@ nav {
 .small-tile {
 	flex-basis: calc(50% - 1em);
 	height: 20vh;
+}
+
+/* media queries */
+@media screen and (max-width: 768px) {
+	header,
+	footer {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.hf-title-container {
+		width: auto;
+		text-align: center;
+	}
+
+	#hero-banner {
+		justify-content: center;
+		text-align: center;
+	}
+
+	.page-section {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.aside-container {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		border-right: none;
+		border-bottom: var(--thick) solid var(--dark);
+		padding: 1.5rem 0;
+		margin-bottom: 1.5rem;
+	}
+
+	#profile-pic {
+		min-width: 50%;
+		min-height: 30vh;
+		margin-top: 1.5rem;
+	}
+
+	#project-grid {
+		display: flex;
+		flex-direction: column;
+		align-items: stretch;
+		flex-wrap: wrap;
+		padding: 1.5rem 0;
+	}
+	.project-tile {
+		min-height: 20vh;
+		/* width: 100%; */
+	}
+
+	#ptl {
+		min-height: 30vh;
+	}
 }
