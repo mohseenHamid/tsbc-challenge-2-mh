@@ -6,8 +6,8 @@ Questions
 4. How to size the project tiles, especially large tile so that they respond to scrolling
 6. How to fill the page height
 7. Width of large tile longer than small tiles
-8. Why is the width of aside-container and hf-container different even though both are set to 15%?
-9. How to stop tile bg leaking under small screen mode
+8. Why is the width of aside-container and hf-container different even though both are set to 15%
+9. Why do media queries not work on dev tools/GitHub Page
 */
 
 /* page styles */
@@ -279,7 +279,6 @@ nav {
 	}
 	.project-tile {
 		min-height: 20vh;
-		/* width: 100%; */
 	}
 
 	#ptl {
