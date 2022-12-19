@@ -45,9 +45,13 @@ Please see below a link to the figma wireframe of the webpage:
 
 - https://www.figma.com/file/FpdVq5dlxMxByHo35mkCRz/tsbc-challenge-2-mh?node-id=0%3A1&t=P4SSiwnPnoA10f2h-1
 
-Please see below a screenshot of the webpage:
+Please see below screenshots of the webpage:
 
-![portfolio webpage screenshot](./images/portfolio-screenshot.png)
+Full-Size
+![portfolio full-size webpage screenshot](./images/portfolio-screenshot.png)
+
+Mobile (768px)
+![portfolio mobile webpage screenshot](./images/portfolio-screenshot-mobile.png)
 
 The following link takes you to the GitHub Pages deployment of the website:
 
