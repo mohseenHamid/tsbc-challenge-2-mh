@@ -38,6 +38,7 @@ This portfolio webpage includes:
   2. My Work: a tiled layout of my projects (that can be clicked)
 - a footer containing contact info
 
+### Wireframe
 Please see below a screenshot of the figma wireframe:
 ![figma wireframe](./images/wireframe.png)
 
@@ -45,12 +46,13 @@ Please see below a link to the figma wireframe of the webpage:
 
 - https://www.figma.com/file/FpdVq5dlxMxByHo35mkCRz/tsbc-challenge-2-mh?node-id=0%3A1&t=P4SSiwnPnoA10f2h-1
 
+### Webpage
 Please see below screenshots of the webpage:
 
-Full-Size
-![portfolio full-size webpage screenshot](./images/portfolio-screenshot.png)
+- Full-Size
+![portfolio full-size webpage screenshot](./images/portfolio-screenshot-full.png)
 
-Mobile (768px)
+- Mobile (768px)
 ![portfolio mobile webpage screenshot](./images/portfolio-screenshot-mobile.png)
 
 The following link takes you to the GitHub Pages deployment of the website:
