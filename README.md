@@ -52,18 +52,17 @@ Please see below a link to the figma wireframe of the webpage:
 
 Please see below screenshots of the webpage:
 
-Full-Size
-![portfolio full-size webpage screenshot](./images/portfolio-screenshot.png)
+- Full-Size
+
+![portfolio full-size webpage screenshot](./images/portfolio-screenshot-full.png)
+
+- Mobile (768px)
 
 ![portfolio mobile webpage screenshot](./images/portfolio-screenshot-mobile.png)
 
 The following link takes you to the GitHub Pages deployment of the website:
 
 - https://mohseenhamid.github.io/tsbc-challenge-2-mh/
-
-## Credits
-
-N/A
 
 ## License
 
