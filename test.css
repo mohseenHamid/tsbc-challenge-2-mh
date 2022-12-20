@@ -87,8 +87,8 @@ footer {
 }
 
 .page-section {
+	margin: 2rem 4rem;
 	align-items: stretch;
-	padding: 2rem 4rem;
 }
 
 /* header/footer styles */
@@ -96,6 +96,7 @@ footer {
 	flex: 1;
 	display: flex;
 	justify-content: flex-end;
+	flex-wrap: wrap;
 	margin-left: 4rem;
 }
 
@@ -148,6 +149,7 @@ nav {
 
 .aside-title {
 	color: var(--dark);
+	padding-left: 5rem;
 }
 
 #about-me-para {
@@ -177,7 +179,7 @@ nav {
 	flex-direction: row;
 	justify-content: center;
 	flex-wrap: wrap;
-	padding-left: 1.5rem;
+	padding: 0 0 0 1.5rem;
 }
 
 .tile-wrap {
@@ -243,7 +245,6 @@ nav {
 	.hf-title-container {
 		width: auto;
 		text-align: center;
-		margin-left: 0;
 		padding-top: 1.5rem;
 	}
 
@@ -287,7 +288,7 @@ nav {
 		border-right: none;
 		border-bottom: var(--thick) solid var(--dark);
 		padding: 1.5rem 0;
-		margin-bottom: 1.5rem;
+		margin-bottom: 0 0 1.5rem 0;
 	}
 
 	#profile-pic {
