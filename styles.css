@@ -81,7 +81,6 @@ p {
 header,
 footer {
 	display: flex;
-	flex-direction: row;
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: space-between;
@@ -89,15 +88,15 @@ footer {
 
 .page-section {
 	margin: 2rem 4rem 2rem 0;
-	display: flex;
-	justify-content: flex-start;
 	align-items: stretch;
 }
 
 /* header/footer styles */
 .hf-title-container {
-	width: 15%;
-	text-align: right;
+	flex: 1;
+	display: flex;
+	justify-content: flex-end;
+	flex-wrap: wrap;
 }
 
 #at {
@@ -105,8 +104,9 @@ footer {
 }
 
 nav {
+	flex: 6;
 	display: flex;
-	flex-direction: row;
+	justify-content: flex-end;
 	align-items: center;
 	margin: 0 4rem;
 	padding: 1.5rem 0;
@@ -231,7 +231,7 @@ nav {
 	header,
 	footer {
 		display: flex;
-		flex-direction: row;
+		flex-direction: column;
 		flex-wrap: wrap;
 		align-items: center;
 		justify-content: center;
@@ -240,6 +240,28 @@ nav {
 	.hf-title-container {
 		width: auto;
 		text-align: center;
+		padding-top: 1.5rem;
+	}
+
+	header nav {
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+	}
+	header nav .nav-item {
+		text-decoration: none;
+		color: var(--light);
+		padding: 1rem;
+		border-radius: var(--curve) var(--curve) 0 0;
+		border-bottom: var(--thick) solid var(--light);
+		border-right: none;
+	}
+	header nav .nav-item:hover {
+		background: linear-gradient(to top, wheat 50%, var(--dark) 50%) bottom;
+		background-size: 100% 200%;
+		color: var(--dark);
+		border-right: none;
+		transition: all 0.5s;
 	}
 
 	#hero-banner {
