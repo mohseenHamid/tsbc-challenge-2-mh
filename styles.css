@@ -228,7 +228,8 @@ nav {
 	min-height: 30vh;
 }
 #ptl:hover {
-	background-image: url("https://www.hdwallpapers.in/download/purple_planet_and_purple_space_hd_purple-1920x1080.jpg");
+	/* background-image: url("../images/planet-bg.png"); */
+	background-image: url("../images/purple-planet.png");
 }
 
 .small-tile {
